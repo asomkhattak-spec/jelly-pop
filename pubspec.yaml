@@ -1,0 +1,21 @@
+name: jelly_pop
+description: "Jelly Pop! — a juicy tap-and-pop arcade game for kids. Combos, fever mode, collectible jelly skins."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.3.2
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
