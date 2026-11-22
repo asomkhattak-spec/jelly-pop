@@ -25,7 +25,9 @@ jobs:
         run: python3 tool/gen_audio.py
 
       - name: Regenerate platform folders
-        run: flutter create --platforms=android --org com.jellypop --project-name jelly_pop .
+        run: |
+          flutter create --platforms=android --org com.jellypop --project-name jelly_pop .
+          rm -f test/widget_test.dart
 
       - name: Patch Android config
         run: python3 tool/patch_android.py
